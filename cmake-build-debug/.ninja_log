@@ -1,0 +1,12 @@
+# ninja log v5
+2	52	6660770444702282	CMakeFiles/vector.dir/libs/data_structures/vector/vector.c.obj	71839fac682d34af
+3	54	6660770362014069	CMakeFiles/LW_5b.dir/main.c.obj	6a5291f46cdd71cb
+2	55	6660770362069601	CMakeFiles/LW_5b.dir/libs/data_structures/vector/vector.c.obj	798d8943533e477a
+2	57	6660770793300587	libLW_5b.a	60be6e61842a5654
+55	114	6660770362615069	LW_5b.exe	d93d60cdea9b46c4
+2	53	6660770407012760	CMakeFiles/main.dir/main.c.obj	c1556bcdf3331ec0
+0	78	6660772317903639	build.ninja	a8a176f4049cf355
+1	50	6660774536416347	CMakeFiles/LW_5b.dir/main.c.obj	6a5291f46cdd71cb
+50	106	6660774536942193	LW_5b.exe	d93d60cdea9b46c4
+2	48	6660774589812720	CMakeFiles/LW_5b.dir/main.c.obj	6a5291f46cdd71cb
+48	101	6660774590392200	LW_5b.exe	d93d60cdea9b46c4
