@@ -10,3 +10,6 @@
 50	106	6660774536942193	LW_5b.exe	d93d60cdea9b46c4
 2	48	6660774589812720	CMakeFiles/LW_5b.dir/main.c.obj	6a5291f46cdd71cb
 48	101	6660774590392200	LW_5b.exe	d93d60cdea9b46c4
+0	55	6663280160364684	CMakeFiles/LW_5b.dir/main.c.obj	6a5291f46cdd71cb
+2	64	6663280160457163	CMakeFiles/LW_5b.dir/libs/data_structures/vector/vector.c.obj	798d8943533e477a
+64	122	6663280161060961	LW_5b.exe	d93d60cdea9b46c4

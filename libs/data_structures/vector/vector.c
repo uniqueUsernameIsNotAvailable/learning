@@ -14,20 +14,20 @@ vector createVector(size_t n) {
 
 
 void reserve(vector *v, size_t newCapacity) {
-    if (newCapacity){
+    if (newCapacity) {
         v->data = (int *) realloc(v->data, newCapacity * sizeof(int));
-    if (v->data == NULL) {
+        if (v->data == NULL) {
             fprintf(stderr, "Memory allocation went wrong");
             exit(1);
         }
 
         v->capacity = newCapacity;
+
         if (v->size > newCapacity)
             v->size = newCapacity;
-        else {
-            free(v->data);
-            v->data = NULL;
-        }
+    } else {
+        free(v->data);
+        v->data = NULL;
     }
 }
 
@@ -48,3 +48,47 @@ void deleteVector(vector *v) {
     v->size = 0;
     v->capacity = 0;
 }
+
+
+_Bool isEmpty(vector *v) {
+    return (v->size == 0);
+}
+
+
+_Bool isFull(vector *v) {
+    return (v->capacity == v->size);
+}
+
+
+int getVectorValue(vector *v, size_t i) {
+    return (v->data[i]);
+}
+
+
+void pushBack(vector *v, int x) {
+    if (v->capacity == 0)
+        reserve(v, 1);
+    else if (isFull(v))
+        reserve(v, v->capacity * 2);
+
+    v->data[v->size] = x;
+    v->size++;
+}
+
+void popBack(vector *v) {
+    if (isEmpty(v)) {
+        fprintf(stderr, "Vector has no elements to destroy");
+        exit(1);
+    }
+
+    v->size--;
+}
+
+
+int *atVector(vector *v, size_t index);
+
+
+int *back(vector *v);
+
+
+int *front(vector *v);
