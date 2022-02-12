@@ -13,7 +13,7 @@ typedef struct vector {
 /*!
  * Возвращает структуру-дескриптор вектор из n значений
  * @param n - кол-во значений в векторе
- * @return vector - структуру-дескриптор вектор
+ * @return vector - структура-дескриптор вектор
  */
 vector createVector(size_t n);
 

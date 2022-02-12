@@ -75,6 +75,7 @@ void pushBack(vector *v, int x) {
     v->size++;
 }
 
+
 void popBack(vector *v) {
     if (isEmpty(v)) {
         fprintf(stderr, "Vector has no elements to destroy");
